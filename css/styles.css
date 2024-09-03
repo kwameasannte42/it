@@ -1,0 +1,226 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; 
+    line-height: 1.714em; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.571em; 
+}
+
+h2 {
+    font-size: 2.143em; 
+}
+
+h3 {
+    font-size: 1.714em; 
+}
+
+h4 {
+    font-size: 1.429em; 
+}
+
+h5 {
+    font-size: 1.143em; 
+}
+
+h6 {
+    font-size: 1em; 
+}
+
+.subheading, .marketing-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.143em;
+    font-weight: 500;
+}
+
+p, li, table, a, button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; 
+    line-height: 1.714em; 
+}
+
+/* Container Flex */
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/assets/images/pexels-cottonbro-6804068.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 0; 
+}
+
+.hero-section h1 {
+    font-size: 2.571em; /* 36px */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.143em; /* 16px */
+}
+
+/* Navigation Bar */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px; 
+    margin-bottom: 20px; 
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: #ac1a2f !important;
+    border-radius: 100px; 
+    overflow: hidden; 
+    width: 70%; 
+    max-width: 1200px; 
+    height: 70px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; /* 14px */
+    line-height: 2.5rem; 
+}
+
+.navbar .navbar-toggler {
+    background-color: white !important;
+    border-radius: 5px; 
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.143em; /* 16px */
+    line-height: 2.5rem; 
+}
+
+/* Image Grid Section (Home Page Only) */
+.image-grid .image-link {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Increased height to make the large grid item more prominent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.image-grid .col-md-4 .image-link {
+    height: 190px; /* Smaller height for the smaller grid items */
+}
+
+.image-grid .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid h2 {
+    color: white;
+    font-size: 1.714em; /* 24px */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Content Section (Other Pages) */
+.content-section {
+    padding: 50px 0;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+    color: #60000c;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Left Pane (Other Pages) */
+.left-pane {
+    background-color: #343a40;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.left-pane .list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.left-pane .list-group-item:hover {
+    background-color: #ac1a2f;
+}
+
+/* Footer */
+footer {
+    background-color: #000000 !important;
+    color: white !important;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    border-top: 2px solid #463f40;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 1.786em; /* 25px */
+    }
+
+    .hero-section p {
+        font-size: 0.857em; /* 12px */
+    }
+
+    .image-grid .image-link {
+        height: 200px;
+    }
+
+    .image-grid h2 {
+        font-size: 1.143em; /* 16px */
+    }
+
+    .navbar {
+        width: 90%; 
+        height: 80px; 
+    }
+
+    .navbar .navbar-nav .nav-link, .navbar .navbar-brand {
+        line-height: 2rem; 
+    }
+}
